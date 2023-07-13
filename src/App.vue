@@ -1,8 +1,10 @@
 <script>
+import HeaderNav from "./components/HeaderNav.vue"
+
 export default {
   name: 'App',
   components: {
-
+    HeaderNav
   },
   data(){
     return {
@@ -17,9 +19,7 @@ export default {
 
 <template>
 
-  <header>
-    HEADER
-  </header>
+  <HeaderNav />
 
   <main>
     MAIN
@@ -32,5 +32,5 @@ export default {
 </template>
 
 <style lang="scss">
-  @use "./assets/scss/"
+  @use "./assets/scss/main.scss"
 </style>
