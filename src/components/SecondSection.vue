@@ -67,13 +67,14 @@ export default {
 
     .shops {
         img {
-            width: 45px;
+            width: 40px;
             vertical-align: middle;
         }
         span {
             color: white;
             vertical-align: middle;
             padding-left: 5px;
+            font-weight:200
         }
     }
 

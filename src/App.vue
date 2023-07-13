@@ -2,13 +2,15 @@
 import HeaderNav from "./components/HeaderNav.vue"
 import MainComponent from "./components/MainComponent.vue"
 import SecondSection from "./components/SecondSection.vue"
+import FooterNav from "./components/FooterNav.vue"
 
 export default {
   name: 'App',
   components: {
     HeaderNav,
     MainComponent,
-    SecondSection
+    SecondSection,
+    FooterNav
   },
   data(){
     return {
@@ -29,9 +31,7 @@ export default {
 
   <SecondSection />
 
-  <footer>
-    FOOTER
-  </footer>
+  <FooterNav />
 
 </template>
 
