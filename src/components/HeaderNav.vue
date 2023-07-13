@@ -113,7 +113,7 @@ export default {
 
     img {
         width: 60px;
-        padding-top: 10px;
+        padding: 20px 0;
     }
 
     ul {

@@ -1,10 +1,12 @@
 <script>
 import HeaderNav from "./components/HeaderNav.vue"
+import MainComponent from "./components/MainComponent.vue"
 
 export default {
   name: 'App',
   components: {
-    HeaderNav
+    HeaderNav,
+    MainComponent
   },
   data(){
     return {
@@ -21,9 +23,7 @@ export default {
 
   <HeaderNav />
 
-  <main>
-    MAIN
-  </main>
+  <MainComponent />
 
   <footer>
     FOOTER
