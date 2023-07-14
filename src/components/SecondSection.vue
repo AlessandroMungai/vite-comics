@@ -12,12 +12,29 @@ export default {
   },
   data(){
     return {
+        iconsMain: [
+            {
+                img: digitalComics,
+                name: 'DIGITAL COMICS'
+            },
+            {
+                img: merchandise,
+                name: 'DC MERCHANDISE'
+            },
+            {
+                img: subscription,
+                name: 'SUBSCRICTION'
+            },
+            {
+                img: shopLocator,
+                name: 'COMIC SHOP LOCATOR'
+            },
+            {
+                img: shopVisa,
+                name: 'DC POWER VISA'
+            },
+        ],
 
-        digitalComics,
-        merchandise,
-        subscription,
-        shopLocator,
-        shopVisa,
     }
   },
   methods: {
@@ -34,25 +51,9 @@ export default {
 
             <div class="shops">
 
-                <a href="#">
-                    <img :src="digitalComics" alt="digital comics">
-                    <span>DIGITAL COMICS</span>
-                </a>
-                <a href="#">
-                    <img :src="merchandise" alt="merchandise">
-                    <span>DC MERCHANDISE</span>
-                </a>
-                <a href="#">
-                    <img :src="subscription" alt="subscription">
-                    <span>SUBSCRIPTION</span>
-                </a>
-                <a href="#">
-                    <img :src="shopLocator" alt="shop locator">
-                    <span>SHOP LOCATOR</span>
-                </a>
-                <a href="#">
-                    <img :src="shopVisa" alt="shop visa">
-                    <span>SHOP VISA</span>
+                <a href="#" v-for="icon in iconsMain">
+                    <img :src="icon.img" alt="digital comics">
+                    <span>{{icon.name}}</span>
                 </a>
 
             </div>

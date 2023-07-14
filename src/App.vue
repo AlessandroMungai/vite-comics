@@ -3,6 +3,7 @@ import HeaderNav from "./components/HeaderNav.vue"
 import MainComponent from "./components/MainComponent.vue"
 import SecondSection from "./components/SecondSection.vue"
 import FooterNav from "./components/FooterNav.vue"
+import FooterBottom from "./components/FooterBottom.vue"
 
 export default {
   name: 'App',
@@ -10,7 +11,8 @@ export default {
     HeaderNav,
     MainComponent,
     SecondSection,
-    FooterNav
+    FooterNav,
+    FooterBottom
   },
   data(){
     return {
@@ -32,6 +34,8 @@ export default {
   <SecondSection />
 
   <FooterNav />
+
+  <FooterBottom />
 
 </template>
 
