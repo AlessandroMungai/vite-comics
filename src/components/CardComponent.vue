@@ -45,10 +45,11 @@ export default {
         height: 180px;
         object-fit: cover;
         object-position: top;
+        transition: all 0.3s ease-in-out;
     }
 
     img:hover {
-            border: 2px solid #e1ec0d;
+            transform: scale(1.1);
         }
     .card {
 

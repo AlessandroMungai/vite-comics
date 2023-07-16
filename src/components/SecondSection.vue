@@ -65,37 +65,26 @@ export default {
 </template>
 
 <style scoped lang="scss">
-
-    .shops {
-        img {
-            width: 40px;
-            vertical-align: middle;
-        }
-        span {
-            color: white;
-            vertical-align: middle;
-            padding-left: 5px;
-            font-weight:200
-        }
-    }
-
     .second-section {
         background-color: #0282F9;
         padding: 40px 0;
-    }
+        .shops {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
 
-    .shops {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+            img {
+                width: 40px;
+                vertical-align: middle;
+            }
+            span {
+                color: white;
+                vertical-align: middle;
+                padding-left: 5px;
+                font-weight:200
+            }
+        }
     }
-
-    h1 {
-        color:white;
-        padding: 40px 0;
-        font-size: 1.5rem;
-    }
-
     .container {
         max-width: 1100px;
         margin: 0 auto;

@@ -58,7 +58,6 @@ export default {
 </template>
 
 <style scoped lang="scss">
-
     .social-icon {
         display: flex;
         align-items: center;
@@ -91,13 +90,10 @@ export default {
             cursor: pointer;
         }
     }
-
     .container {
         max-width: 1200px;
         margin: 0 auto;
         padding: 0;
     }
-
-    
 
 </style>

@@ -167,6 +167,12 @@ export default {
 
   	<main>
 
+		<div class="jumbo">
+
+			<img src="../assets/img/jumbotron.jpg" alt="">
+
+		</div>
+
 		<div class="container">
 
 			<div class="cards-contain">
@@ -206,4 +212,10 @@ export default {
         padding: 0;
     }
 
+	img {
+		width: 100%;
+		height: 350px;
+		object-fit: cover;
+		object-position: top;
+	}
 </style>

@@ -84,38 +84,40 @@ export default {
 
     header {
         background-color: white;
+        .header-contain {
+            display: flex;
+            justify-content: space-between;        
+            align-items: center;
+
+            img {
+                width: 60px;
+                padding: 20px 0;
+            }
+
+            ul {
+                display: flex;
+                list-style-type: none;
+
+                li{
+                    padding: 0 20px;
+                }
+                
+                a {
+                    color: black;
+                    text-decoration: none;
+                    font-size: 0.8rem;
+
+                    &:hover {
+                        color: #0C7CEC;
+                    }
+                }
+            }
+        }
     }
     .container {
         max-width: 1200px;
         margin: 0 auto;
         padding: 0;
-    }
-
-    .header-contain {
-        display: flex;
-        justify-content: space-between;        
-        align-items: center;
-    }
-
-    img {
-        width: 60px;
-        padding: 20px 0;
-    }
-
-    ul {
-        display: flex;
-        list-style-type: none;
-
-        li{
-            padding: 0 20px;
-    
-        }
-        
-        a {
-            color: black;
-            text-decoration: none;
-            font-size: 0.8rem;
-        }
     }
 
 </style>
