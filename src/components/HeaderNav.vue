@@ -9,7 +9,33 @@ export default {
   data(){
     return {
         imgLogo,
-        name: "logo-dc"
+        name: "logo-dc",
+        navItems: [
+            {
+                name:'CHARACTERS'
+            },
+            {
+                name:'COMICS'
+            },
+            {
+                name:'MOVIES'
+            },
+            {
+                name:'TV'
+            },
+            {
+                name:'VIDEOS'
+            },
+            {
+                name:'FANS'
+            },
+            {
+                name:'NEWS'
+            },
+            {
+                name:'SHOP'
+            },
+    ]
     }
   },
   methods: {
@@ -35,49 +61,9 @@ export default {
 
                         <ul>
                             
-                            <li>
+                            <li v-for="item in navItems">
                                 <a href="#">
-                                    CHARACTERS
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    COMICS
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    MOVIES
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    TV
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    COLLECTIBLES
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    VIDEOS
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    FANS
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    NEWS
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    SHOP
+                                    {{item.name}}
                                 </a>
                             </li>
 

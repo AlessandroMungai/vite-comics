@@ -51,7 +51,7 @@ export default {
 
             <div class="shops">
 
-                <a href="#" v-for="icon in iconsMain">
+                <a href="#" v-for="(icon, iconIndex) in iconsMain" :key="iconIndex">
                     <img :src="icon.img" alt="digital comics">
                     <span>{{icon.name}}</span>
                 </a>
