@@ -1,12 +1,11 @@
 <script>
+import CardComponent from "./CardComponent.vue"
+
 export default {
   name: 'MainComponent',
-  components: {
-
-  },
   data(){
     return {
-        cards: [
+    	cards: [
 
 			{
 
@@ -152,8 +151,11 @@ export default {
 
 			},
 
-]
+	]
     }
+  },
+  components: {
+	CardComponent
   },
   methods: {
 
@@ -163,72 +165,40 @@ export default {
 
 <template>
 
-  <main>
+  	<main>
 
-    <div class="container">
+		<div class="container">
 
-		<div class="cards-contain">
+			<div class="cards-contain">
 
-			<div class="col-cards" v-for="card in cards">
+				<div class="col-cards">
 
-				<img :src="card.thumb" alt="">
+					<CardComponent v-for="(card, cardIndex) in cards" :key="cardIndex"
+						:cardImg="card.thumb"
+						:cardTitle="card.series"
+						:cardSubtitle="card.type"
+						:cardPrice="card.price"
+						/>
 
-				<p class="title-series">
-					{{card.series}}
-				</p>
-				<p class="type-series">
-					{{card.type}}
-				</p>
-				<p class="price-series">
-					{{card.price}}
-				</p>
+				</div>
 
 			</div>
 
 		</div>
 
-    </div>
-
-  </main>
+  	</main>
 
 </template>
 
 <style scoped lang="scss">
 	.cards-contain {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		padding: 40px 0;
-
 		.col-cards {
-
-			width: calc(100% / 6 - 10px);
-			margin: 5px 5px;
-			cursor: pointer;
-
-			img {
-				width: 180px;
-				height: 180px;
-				object-fit: cover;
-				object-position: top;
-			}
-			
-			p {
-				&.title-series {
-					color: white;
-					text-transform: uppercase;					
-				}
-				&.type-series {
-					color: #0D7CEC;
-					font-style: italic;
-					font-size: 0.9rem;
-				}
-				&.price-series {
-					color: #e1ec0d;
-					font-size: 0.9rem;
-				}
-			}
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			padding: 40px 0;
 		}
+
 	}
     .container {
         max-width: 1200px;
