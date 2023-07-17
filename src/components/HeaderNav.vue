@@ -57,17 +57,17 @@ export default {
                 </div>
 
                 <div class="nav-bar">
+
                     <nav>
 
                         <ul>
-                            
-                            <li v-for="item in navItems">
+                            <li v-for="(item, itemIndex) in navItems" :key="itemIndex">
                                 <a href="#">
                                     {{item.name}}
                                 </a>
                             </li>
-
                         </ul>
+
                     </nav>
 
                 </div>
